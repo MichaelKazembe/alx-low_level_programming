@@ -18,4 +18,6 @@ TASK 8. Hexadecimal:Write a program that prints all the numbers of base 16 in lo
 TASK 9. Patience, persistence and perspiration make an unbeatable combination for succes: Write a program that prints all possible combinations of single-digit numbers.
 
 TASK 10. Inventing is a combination of brains and materials. The more brains you use, the less material you need: Write a program that prints all possible different combinations of two digits
+
+TASK 11. The success combination in business is: Do what you do better... and: do more of what you do:Write a program that prints all possible different combinations of three digits.
 .
