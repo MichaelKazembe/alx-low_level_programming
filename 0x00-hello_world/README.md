@@ -12,3 +12,5 @@ ASK 4. Hello, puts :Write a C program that prints exactly "Programming is like b
 TASK 5. Hello, printf: Write a C program that prints exactly with proper grammar, but the outcome is a piece of art,, followed by a new line.
 
 TASK 6. Size is not grandeur, and territory does not make a nation: Write a C program that prints the size of various types on the computer it is compiled and run on
+
+TASK 7. Intel  Write a script that generates the assembly code (Intel syntax) of a C code and save it in an output file.
