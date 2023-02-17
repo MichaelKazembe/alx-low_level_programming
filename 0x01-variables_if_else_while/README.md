@@ -9,4 +9,6 @@ TASK 4. When I was having that alphabet soup, I never thought that it would pay 
 
 TASK 5. Numbers: Write a program that prints all single digit numbers of base 10 starting from 0, followed by a new line.
 
+
+TASK 6. Numberz: Write a program that prints all single digit numbers of base 10 starting from 0, followed by a new line.
 .
