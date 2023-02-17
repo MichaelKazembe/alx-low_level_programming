@@ -2,27 +2,27 @@
 /**
  * main - entry point
  *
- * Return: alwaysreturns 0
+ * Return: alway returns 0
  *
  */
 int main(void)
 {
-	int a;
-	int b;
-	int c
+	int i;
+	int j;
+	int k;
 
-	for (a = 0; a <= 9; a++)
+	for (i = 0; i <= 9; i++)
 	{
-		for (b = 0; b <= 9; b++)
+		for (j = 0; j <= 9; j++)
 		{
-			for (c = 0; c <= 9; c++)
+			for (k = 0; k <= 9; k++)
 			{
-				if (c > b && b > a
+				if (k > j && j > i)
 				{
-					putchar(a+ '0');
-					putchar(b+ '0');
-					putchar(c+ '0');
-					if (a!= 7 || b!= 8 || c!= 9)
+					putchar(i + '0');
+					putchar(j + '0');
+					putchar(k + '0');
+					if (i != 7 || j != 8 || k != 9)
 					{
 						putchar(',');
 						putchar(' ');
@@ -34,3 +34,4 @@ int main(void)
 	putchar('\n');
 	return (0);
 }
+
