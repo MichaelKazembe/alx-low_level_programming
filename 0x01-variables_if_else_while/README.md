@@ -6,4 +6,7 @@ TASK 1. The last digit:This program will assign a random number to the variable 
 TASK 2. I sometimes suffer from insomnia. And when I can't fall asleep, I play what I call the alphabet game:Write a program that prints the alphabet in lowercase, followed by a new line.
 TASK 3. alphABET: Write a program that prints the alphabet in lowercase, and then in uppercase, followed by a new line
 TASK 4. When I was having that alphabet soup, I never thought that it would pay off :Write a program that prints the alphabet in lowercase, followed by a new line. Print all the letters except q and e
+
+TASK 5. Numbers: Write a program that prints all single digit numbers of base 10 starting from 0, followed by a new line.
+
 .
