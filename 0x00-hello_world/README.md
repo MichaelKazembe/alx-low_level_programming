@@ -4,3 +4,5 @@ TASK 0.Preprocessor: Write a script that runs a C file through the preprocessor 
 TASK 1. Compiler: Write a script that compiles a C file but does not link.
 
 TASK 2. Assembler: Write a script that generates the assembly code of a C code and save it in an output file.
+
+TASK 3. Name: Write a script that compiles a C file and creates an executable named cisfun
