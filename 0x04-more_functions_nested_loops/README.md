@@ -1,1 +1,1 @@
-0-isupper.c
+Solutions to each tasks
