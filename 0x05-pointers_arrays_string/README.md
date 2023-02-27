@@ -5,4 +5,7 @@ Write a function that takes a pointer to an int as parameter and updates the val
 Write a function that swaps the values of two integers.
 
 2-strlen.c
-Write a function that returns the length of a string.
+Write a function that returns the length of a string
+
+3-puts.c
+Write a function that prints a string, followed by a new line, to stdout
