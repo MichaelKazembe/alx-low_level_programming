@@ -4,12 +4,12 @@
 /**
  * main - prints name of file it is complied from
  *
- * return: Always 0
+ * Return: Always 0.
  */
 
-int main()
+int main(void)
 {
-	printf("The Name of the file is : %s\n", __FILE__);
+	printf("%s\n", __FILE__);
 
 	return (0);
 }
