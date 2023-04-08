@@ -9,24 +9,35 @@
  */
 
 void print_binary(unsigned long int n)
-
 {
-	unsigned int remainder;
-	unsigned long binary = 0;
-	unsigned long binary_value = 1;
+	unsigned long int binary_value = 1;
+
+	binary_value <<= ((sizeof(binary_value) * 8) - 1);
 
 	if (n == 0)
 	{
-		printf("binary number for %ld is: %ld\n", n, binary);
+		_putchar('0');
 		return;
 	}
-
-	while (n != 0)
+	if (n == 1)
 	{
-		remainder = n % 2;
-		binary = binary + (remainder * binary_value);
-		n = n / 2;
-		binary_value = binary_value * 10;
+		_putchar('1');
+		return;
 	}
-	printf("binary number for %ld, is %ld\n", n, binary);
+	while (binary_value > 0)
+	{
+		if ((binary_value & n) == 0)
+			binary_value >>= 1;
+		else
+			break;
+	}
+	while (binary_value > 1)
+	{
+		if ((binary_value & n) == 0)
+			_putchar('0');
+		else
+			_putchar('1');
+		binary_value >>= 1;
+	}
+
 }
