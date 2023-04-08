@@ -31,7 +31,7 @@ void print_binary(unsigned long int n)
 		else
 			break;
 	}
-	while (binary_value > 1)
+	while (binary_value > 0)
 	{
 		if ((binary_value & n) == 0)
 			_putchar('0');
