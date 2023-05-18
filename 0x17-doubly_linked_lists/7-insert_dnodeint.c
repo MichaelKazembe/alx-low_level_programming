@@ -1,16 +1,14 @@
 #include "lists.h"
 /**
- * insert_dnodeint_at_index - Inserts a new node at a given position.
- * @h: Pointer to the pointer of the head of the list.
- * @idx: Index of the list where the new node should be added (starts at 0).
- * @n: Value to be stored in the new node.
- *
- * Return: The address of the new node, or NULL if it failed.
+ * insert_dnodeint_at_incount - Inserts a new node at a given position
+ * @h: address of linked list
+ * @idx: index to place list
+ * @n: Value to be stored in the new node
+ * Return: The address of the new node, or NULL if it failed
  */
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
 	dlistint_t *current, *newNode;
-	unsigned int count = 0;
 
 	if (h == NULL)
 		return (NULL);
@@ -22,31 +20,42 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	newNode->prev = NULL;
 	newNode->next = NULL;
 
+	if (*h == NULL)
+	{
+		if (idx == 0)
+		{
+			*h = newNode;
+			return (newNode);
+		}
+		free(newNode);
+		return (NULL);
+	}
+
 	if (idx == 0)
 	{
 		newNode->next = *h;
-		if (*h != NULL)
-			(*h)->prev = newNode;
+		(*h)->prev = newNode;
 		*h = newNode;
-		return (NULL);
+		return (newNode);
 	}
 	current = *h;
-	while (current != NULL && count < idx - 1)
+	while (idx > 1 && current->next != NULL)
 	{
 		current = current->next;
-		count++;
+		idx--;
 	}
-	if (current == NULL)
+
+	if (idx > 1 || current == NULL)
 	{
 		free(newNode);
 		return (NULL);
 	}
+
 	newNode->next = current->next;
 	if (current->next != NULL)
-	{
 		current->next->prev = newNode;
-	}
 	current->next = newNode;
 	newNode->prev = current;
+
 	return (newNode);
 }
