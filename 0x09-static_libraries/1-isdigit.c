@@ -1,10 +1,13 @@
+#include "main.h"
+
 /**
- * _isdigit - determine if digit
+ * _isdigit - determine num if digit
  *
- * @c: character to determine
+ * @c: character to determine if digit
  *
- * Return: gives boolean
+ * Return: gives boolean value
  */
+	
 int _isdigit(int c)
 {
 	if (c >= '0' && c <= '9')
