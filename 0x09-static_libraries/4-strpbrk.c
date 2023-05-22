@@ -1,10 +1,13 @@
+include "main.h"
+	
 /**
- * _strpbrk - finds string
- * @s: string to find stuff
- * @accept: accepting arrays
+ * _strpbrk - finds a string.
+ * @s: string to find stuff.
+ * @accept: accepts arrays.
  *
  * Return: returns new value
  */
+	
 char *_strpbrk(char *s, char *accept)
 {
 	int i;
