@@ -1,4 +1,4 @@
-CC := gcc
+CC := gcc -wall -Wextra -O2
 SRC := main.c school.c
 
 school : $(SRC)
