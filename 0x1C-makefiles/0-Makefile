@@ -1,0 +1,7 @@
+all: school
+
+school : school.c main.c
+	gcc -Wall -Wextra -O2 -o school school.c main.c
+
+clean :
+	rm -f school
