@@ -1,4 +1,3 @@
-# use fclean, oclean, and re
 CC = gcc
 SRC = main.c school.c
 OBJ = $(SRC:.c=.o)
