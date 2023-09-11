@@ -1,3 +1,16 @@
+for (i = 0; i < size; i++)
+	{
+		printf("Value checked array[%lu] = [%d]\n", i, array[i]); // Print the value being checked
+		if (array[i] == value)
+		{
+			printf("Found %d at index: %lu\n", value, i);
+			return (i);
+		}
+	}
+
+	printf("%d was not found in the array.\n", value);
+
+
 #include "search_algos.h"
 
 /**
@@ -18,6 +31,7 @@ int linear_search(int *array, size_t size, int value)
 
 	for (i = 0; i < size; i++)
 	{
+		printf("Value checked array[%lu] = [%d]\n", i, array[i]);
 		if (array[i] == value)
 			return (i);
 	}
