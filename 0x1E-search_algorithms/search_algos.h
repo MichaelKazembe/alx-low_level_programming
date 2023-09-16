@@ -5,6 +5,23 @@
 #include <stdlib.h>
 #include <math.h>
 
+/**
+ * struct listint_s - singly linked list
+ *
+ * @n: Integer
+ * @index: Index of the node in the list
+ * @next: Pointer to the next node
+ *
+ * Description: singly linked list node structure
+ * for Holberton project
+ */
+typedef struct listint_s
+{
+	int n;
+	size_t index;
+	struct listint_s *next;
+} listint_t;
+
 /* Linear Search */
 int linear_search(int *array, size_t size, int value);
 
@@ -22,5 +39,8 @@ int exponential_search(int *array, size_t size, int value);
 
 /* Advanced Binary Search */
 int advanced_binary(int *array, size_t size, int value);
+
+/* Jump Search */
+int jump_search(int *array, size_t size, int value);
 
 #endif
