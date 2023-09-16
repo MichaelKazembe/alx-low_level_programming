@@ -1,10 +1,12 @@
 #include "search_algos.h"
+
 /**
  * print_array - prints array
  * @array: sorted array of ints
  * @high: upper bound
  * @low: lower bound
  */
+
 void print_array(int *array, size_t high, size_t low)
 {
 	if (low >= high)
@@ -25,8 +27,9 @@ void print_array(int *array, size_t high, size_t low)
 	}
 	printf("\n");
 }
+
 /**
- * b_search - binary search helper function
+ * _binary_search - binary search helper function
  * Recursively searches for value based on midpoint
  * @array: sorted array of ints
  * @high: top end of array
@@ -34,7 +37,8 @@ void print_array(int *array, size_t high, size_t low)
  * @value: value to search for
  * Return: postion or -1 if not found
  */
-int b_search(int *array, size_t high, size_t low, int value)
+
+int _binary_search(int *array, size_t high, size_t low, int value)
 {
 	int mid = low + (high - low) / 2;
 
@@ -54,9 +58,9 @@ int b_search(int *array, size_t high, size_t low, int value)
 	if (high >= low)
 	{
 		if (array[mid] > value)
-			return (b_search(array, mid, low, value));
+			return (_binary_search(array, mid, low, value));
 		else
-			return (b_search(array, high, mid + 1, value));
+			return (_binary_search(array, high, mid + 1, value));
 	}
 	return (-1);
 }
@@ -69,11 +73,11 @@ int b_search(int *array, size_t high, size_t low, int value)
  */
 int advanced_binary(int *array, size_t size, int value)
 {
-	int ret;
+	int x;
 
 	if (array == NULL)
 		return (-1);
 
-	ret = b_search(array, (int)size - 1, 0, value);
-	return (ret);
+	x = _binary_search(array, (int)size - 1, 0, value);
+	return (x);
 }
