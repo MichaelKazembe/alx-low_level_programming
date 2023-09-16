@@ -20,4 +20,7 @@ int interpolation_search(int *array, size_t size, int value);
 /* Exponential Search */
 int exponential_search(int *array, size_t size, int value);
 
+/* Advanced Binary Search */
+int advanced_binary(int *array, size_t size, int value);
+
 #endif
